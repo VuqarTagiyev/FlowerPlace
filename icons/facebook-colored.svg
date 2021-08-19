@@ -1,0 +1,31 @@
+<svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0)">
+<rect x="-14.71" y="-5.55884" width="47.5876" height="47.6471" fill="url(#pattern0)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.4753 25.3934H8.99918C5.09833 25.3934 1.93579 22.2269 1.93579 18.3212V9.83455C1.93579 5.92882 5.09833 2.76233 8.99918 2.76233H17.4753C21.3761 2.76233 24.5386 5.92882 24.5386 9.83455V18.3212C24.5386 22.2269 21.3761 25.3934 17.4753 25.3934Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.4753 25.3934H8.99918C5.09833 25.3934 1.93579 22.2269 1.93579 18.3212V9.83455C1.93579 5.92882 5.09833 2.76233 8.99918 2.76233H17.4753C21.3761 2.76233 24.5386 5.92882 24.5386 9.83455V18.3212C24.5386 22.2269 21.3761 25.3934 17.4753 25.3934Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.4753 25.3934H8.99918C5.09833 25.3934 1.93579 22.2269 1.93579 18.3212V9.83455C1.93579 5.92882 5.09833 2.76233 8.99918 2.76233H17.4753C21.3761 2.76233 24.5386 5.92882 24.5386 9.83455V18.3212C24.5386 22.2269 21.3761 25.3934 17.4753 25.3934Z" fill="url(#paint0_radial)"/>
+<g opacity="0.7">
+<rect x="0.239014" y="-0.0706787" width="27.1573" height="27.1913" fill="url(#pattern1)"/>
+</g>
+<path d="M17.4753 25.3934H8.99918C5.09833 25.3934 1.93579 22.2269 1.93579 18.3212V9.83455C1.93579 5.92882 5.09833 2.76233 8.99918 2.76233H17.4753C21.3761 2.76233 24.5386 5.92882 24.5386 9.83455V18.3212C24.5386 22.2269 21.3761 25.3934 17.4753 25.3934Z" fill="#2968CC"/>
+<path opacity="0.6" d="M17.4753 25.3934H8.99918C5.09833 25.3934 1.93579 22.2269 1.93579 18.3212V9.83455C1.93579 5.92882 5.09833 2.76233 8.99918 2.76233H17.4753C21.3761 2.76233 24.5386 5.92882 24.5386 9.83455V18.3212C24.5386 22.2269 21.3761 25.3934 17.4753 25.3934Z" fill="#2968CC"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0028 12.0524V14.1753H18.1371L17.6363 17.4474H15.0028V25.3944H11.4715V17.4474H8.60132V14.1753H11.4715V11.6816C11.4715 8.84435 13.1591 7.27856 15.7403 7.27856C16.9769 7.27856 18.2708 7.49975 18.2708 7.49975V10.2846H16.8448C15.4396 10.2846 15.0028 11.1577 15.0028 12.0524Z" fill="white"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1"/>
+</pattern>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22.6848 4.8685) scale(26.3022 26.3351)">
+<stop stop-color="#D1D1D1"/>
+<stop offset="1" stop-color="#3F3F3F"/>
+</radialGradient>
+<clipPath id="clip0">
+<rect width="26.9663" height="27" fill="white" transform="translate(0.359497)"/>
+</clipPath>
+<image id="image0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAj0AAAI9CAYAAADRkckBAAAACXBIWXMAAAsSAAALEgHS3X78AAAA"/>
+<image id="image1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUcAAAFHCAYAAAAySY5rAAAACXBIWXMAAAsSAAALEgHS3X78AAAA"/>
+</defs>
+</svg>

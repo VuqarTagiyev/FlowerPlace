@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER start ------------------------------------- -->
+    <div class="header">
+        <div class="header__top">
+            <div class="header__top-left">Бесплатная доставка для всех заказов от 2000 RUB</div>
+            <div class="header__top-right">
+                Oтслеживание вашего заказа
+                <div class="header__top-right-payment">
+                    <img src="./icons/master.svg" alt="">
+                    <img src="./icons/visa.svg" alt="">
+                </div>
+                <div class="header__top-right-media">
+                    <img src="./icons/facebook.svg" alt="">
+                    <img src="./icons/instagram.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="underline"></div>
+        <div class="nav">
+            <img class="nav__logo" src="icons/logo.svg" alt="" />
+            <ul class="nav__menu">
+                <li class="nav__menu-item">Доставка и оплата</li>
+                <li class="nav__menu-item">Как заказать</li>
+                <li class="nav__menu-item">Отзывы</li>
+                <li class="nav__menu-item">Магазины</li>
+            </ul>
+            <div class="nav__right">
+                <div class="nav__number">
+                    8 (000) 777-0016
+                </div>
+                <div class="nav__media">
+                    <img src="./icons//wp.svg" alt="">
+                    <img src="./icons//telegram.svg" alt="">
+                </div>
+                <div class="nav__operations">
+                    <img src="./icons/user.svg" alt="">
+                    <img src="./icons/heart.svg" alt="">
+                    <img src="./icons/shopping-basket.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="underline"></div>
+        <div class="header__bottom">
+            <ul class="header__categories">
+                <li class="header__categories-item">
+                    Цветы<img class="down-arrow" src="./icons/down-arrow.svg" alt="" />
+                </li>
+                <li class="header__categories-item">
+                    Розы
+                </li>
+                <li class="header__categories-item">
+                    Пионы
+                </li>
+                <li class="header__categories-item">
+                    Сладости<img class="down-arrow" src="./icons/down-arrow.svg" alt="" />
+                </li>
+                <li class="header__categories-item">
+                    Композиции<img class="down-arrow" src="./icons/down-arrow.svg" alt="" />
+                </li>
+                <li class="header__categories-item">
+                    Кому<img class="down-arrow" src="./icons/down-arrow.svg" alt="" />
+                </li>
+            </ul>
+            <div class="header__search-box">
+                <img src="./icons/search.svg" alt="">
+                <input class="header__search-input" />
+            </div>
+        </div>
+        <div class="underline"></div>
+    </div>
+    <!-- HEADER end ------------------------------------- -->
+
+    <div class="pages__path">
+        Flower place / Кому / Маме <span>/ Нежность</span>
+    </div>
+
+    <!-- SECTION 1 start ------------------------------------- -->
+    <section class="product">
+        <div class="product__container">
+            <div class="product__left">
+                <div class="product__images">
+                    <div class="product__big-image-place">
+                        <img src="icons/left-arrow.svg" class="product__image-left-arrow" />
+                        <img src="icons/right-arrow.svg" class="product__image-right-arrow" />
+                        <div class="product__image-slider">
+                            <img class="product__big-image" src="images/flower3.png" id="firstClone" alt="">
+                            <img class="product__big-image" src="images/flower1.png" alt="">
+                            <img class="product__big-image" src="images/flower2.png" alt="">
+                            <img class="product__big-image" src="images/flower3.png" alt="">
+                            <img class="product__big-image" src="images/flower1.png" id="lastClone" alt="">
+                        </div>
+                    </div>
+                    <div class="product__mini-images">
+                        <img src="images/flower2.png" onClick="showThatImage(2)" class="product__mini-image" />
+                        <img src="images/flower3.png" onClick="showThatImage(3)" class="product__mini-image" />
+                        <img src="images/flower1.png" onClick="showThatImage(1)" class="product__mini-image" />
+                    </div>
+                </div>
+                <div class="product__image-zoom-in" onClick = "toggleProductModal()">
+                    <img src="icons/zoom-in.svg" alt="">
+                </div>
+            </div>
+            <div class="product__right">
+                <div class="product__grade">
+                    <span>Оценка:</span>
+                    <div class="product__stars">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star.svg" alt="">
+                    </div>
+                    <div class="product__discount">
+                        <span> 15% </span> скидка
+                    </div>
+                </div>
+                <div class="product__price">
+                    2200 руб. <span>2500 руб</span>
+                </div>
+                <div class="product__postcard-text">
+                    ОТКРЫТКА К БУКЕТУ - БЕСПЛАТНО!
+                    <span onClick="openPostcard()">Выбрать открытку</span>
+                </div>
+                <div class="choose-postcard">
+                    <div class="choose-postcard__slider-container">
+                        <img id="CP_nextBtn" src="icons/right-arrow-black.svg" alt="">
+                        <img id="CP_prevBtn" src="icons/left-arrow-black.svg" alt="">
+                        <div class="choose-postcard__slider">
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging1.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging2.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging3.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging4.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging5.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging6.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging1.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging2.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging3.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging4.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging5.png" alt="">
+                            </div>
+                            <div class="choose-postcard__slider-item">
+                                <div class="choose-postcard__slider-item--hover">
+                                    <div onClick = "toggleProductModal()">
+                                        <img src="icons/zoom-in-white.svg" alt="">
+                                    </div>
+                                </div>
+                                <img src="images/packaging6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose-postcard__bottom">
+                        Добавить комментарий <input class="choose-postcard__add-comment-checkbox" type="checkbox">
+                    </div>
+                    <div class="choose-postcard__add-comment">
+                        <div class="choose-postcard__add-comment-top">
+                            Комментарий к заказу <span onClick = "toggleProductModal()">Посмотреть</span>
+                        </div>
+                        <div class="choose-postcard__add-comment-bottom">
+                            <textarea name="" id=""></textarea>
+                            <img src="images/packaging1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product__postcard-text">
+                    Добавим любой подарок по вашему желанию!
+                    <span>Добавить</span>
+                </div>
+                <div class="product__postcard-text">
+                    <span>Изменить упаковку</span>
+                </div>
+                <div class="product__choose-size">
+                    Выбери свой размер <br>
+                    <div class="product__sizes">
+                        <div class="product__size product__size--active">
+                            <p class="product__size-price">2500 руб.</p>
+                            <p class="product__size-text">Букет <br> маленького размера</p>
+                        </div>
+                        <div class="product__size">
+                            <p class="product__size-price">3500 руб.</p>
+                            <p class="product__size-text">Букет <br> классического размера</p>
+                        </div>
+                        <div class="product__size">
+                            <p class="product__size-price">4500 руб.</p>
+                            <p class="product__size-text">Букет <br> большого размера</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="product__quick-order">
+                    Быстрый заказ
+                </button>
+                <button class="product__add-to-basket">
+                    Добавить в корзину
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 1 end ------------------------------------- -->
+    <!-- SECTION 2 about-product start ------------------------------------- -->
+    <section class="about-product">
+        <div class="about-product__container">
+            <ul class="about-product__list">
+                <li class="about-product__list-item about-product__list-item--active">Описание</li>
+                <li class="about-product__list-item">Отзыв</li>
+                <li class="about-product__list-item">Совет</li>
+            </ul>
+            <div class="bouquet-composition">
+                <p class="bouquet-composition__title">Состав букета</p>
+                <div class="bouquet-composition__item">
+                    <span>Эвкалипт Цинерия</span>
+                    <span>--- 1 шт</span>
+                </div>
+                <div class="bouquet-composition__item">
+                    <span>Лента атлас</span>
+                    <span>--- 1 шт</span>
+                </div>
+                <div class="bouquet-composition__item">
+                    <span>Писташ</span>
+                    <span>--- 1 шт</span>
+                </div>
+                <div class="bouquet-composition__item">
+                    <span>Гербера</span>
+                    <span>--- 1 шт</span>
+                </div>
+                <div class="bouquet-composition__item">
+                    <span>Фоамиран</span>
+                    <span>--- 1 шт</span>
+                </div>
+                <div class="bouquet-composition__item">
+                    <span>Крафт дизайнерский</span>
+                    <span>--- 1 шт</span>
+                </div>
+                <div class="bouquet-composition__item">
+                    <span>Высота букета, см.: 45 см</span>
+                </div>
+            </div>
+            <div class="reviews__container">
+                <p class="reviews__title">Отзывы</p>
+                <div class="reviews">
+                    <div class="reviews__slider">
+                        <div class="reviews__item">
+                            <img src="icons/left-quotes-sign.svg" class="reviews__item-quotes-sign" />
+                            <p class="reviews__item-text">
+                                “ Большое спасибо, прекрасный букет. Доставили во время. Хорошая обраная связь. Приятные
+                                цены. “
+                            </p>
+                            <p class="reviews__item-owner">
+                                Александр Петрович
+                            </p>
+                        </div>
+                        <div class="reviews__item">
+                            <img src="icons/left-quotes-sign.svg" class="reviews__item-quotes-sign" />
+                            <p class="reviews__item-text">
+                                “ Большое спасибо, прекрасный букет. Доставили во время. Хорошая обраная связь. Приятные
+                                цены. “
+                            </p>
+                            <p class="reviews__item-owner">
+                                Александр Петрович
+                            </p>
+                        </div>
+                        <div class="reviews__item">
+                            <img src="icons/left-quotes-sign.svg" class="reviews__item-quotes-sign" />
+                            <p class="reviews__item-text">
+                                “ Большое спасибо, прекрасный букет. Доставили во время. Хорошая обраная связь. Приятные
+                                цены. “
+                            </p>
+                            <p class="reviews__item-owner">
+                                Александр Петрович
+                            </p>
+                        </div>
+                        <div class="reviews__item">
+                            <img src="icons/left-quotes-sign.svg" class="reviews__item-quotes-sign" />
+                            <p class="reviews__item-text">
+                                “ Большое спасибо, прекрасный букет. Доставили во время. Хорошая обраная связь. Приятные
+                                цены. “
+                            </p>
+                            <p class="reviews__item-owner">
+                                Александр Петрович
+                            </p>
+                        </div>
+                        <div class="reviews__item">
+                            <img src="icons/left-quotes-sign.svg" class="reviews__item-quotes-sign" />
+                            <p class="reviews__item-text">
+                                “ Большое спасибо, прекрасный букет. Доставили во время. Хорошая обраная связь. Приятные
+                                цены. “
+                            </p>
+                            <p class="reviews__item-owner">
+                                Александр Петрович
+                            </p>
+                        </div>
+                        <div class="reviews__item">
+                            <img src="icons/left-quotes-sign.svg" class="reviews__item-quotes-sign" />
+                            <p class="reviews__item-text">
+                                “ Большое спасибо, прекрасный букет. Доставили во время. Хорошая обраная связь. Приятные
+                                цены. “
+                            </p>
+                            <p class="reviews__item-owner">
+                                Александр Петрович
+                            </p>
+                        </div>
+                        <div class="reviews__item">
+                            <img src="icons/left-quotes-sign.svg" class="reviews__item-quotes-sign" />
+                            <p class="reviews__item-text">
+                                “ Большое спасибо, прекрасный букет. Доставили во время. Хорошая обраная связь. Приятные
+                                цены. “
+                            </p>
+                            <p class="reviews__item-owner">
+                                Александр Петрович
+                            </p>
+                        </div>
+                        <div class="reviews__item">
+                            <img src="icons/left-quotes-sign.svg" class="reviews__item-quotes-sign" />
+                            <p class="reviews__item-text">
+                                “ Большое спасибо, прекрасный букет. Доставили во время. Хорошая обраная связь. Приятные
+                                цены. “
+                            </p>
+                            <p class="reviews__item-owner">
+                                Александр Петрович
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="reviews__arrows">
+                    <div class="reviews__right-arrow" onClick="getNextReview()">
+                        <img src="icons/arr-right.svg" alt="">
+                    </div>
+                    <div class="reviews__left-arrow" onClick="getPrevReview()">
+                        <img src="icons/arr-left.svg" alt="">
+                    </div>
+                </div>
+                <div class="reviews__feedback">
+                    <span>Оставить отзыв</span>
+                </div>
+            </div>
+            <div class="professional-advice">
+                <p class="professional-advice__title">Совет от профессионала</p>
+                <p class="professional-advice__text">
+                    Ч тобы ваши цветы были свежими, они могут прибыть в виде бутонов.
+                    Это продлевает срок их хранения и прослужит как можно дольше! Подождите 2-3 дня, чтобы ваши новые
+                    бутоны раскрылись и полностью распустились.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- SECTION 2 about-product end ------------------------------------- -->
+    <!-- SECTION 3 start ------------------------------------- -->
+    <section class="gifts-for-u">
+        <h3 class="gifts-for-u__title">
+            Подарки для вас
+        </h3>
+        <div class="gifts-for-u__container">
+            <div class="gifts-for-u__top">
+                <div class="gifts-for-u__slider-container">
+                    <div class="gifts-for-u__slider">
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift3.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift4.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift5.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift2.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift3.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift4.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift5.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gifts-for-u__gift">
+                            <img class="gifts-for-u__gift-image" src="images/gift2.png" alt="">
+                            <div class="gifts-for-u__gift--hover">
+                                <div>
+                                    <div class="gifts-for-u__gift-name">Мишка Teddy</div>
+                                    <div class="gifts-for-u__gift-description">порадует ваших близких</div>
+                                </div>
+                                <div>
+                                    <div class="gifts-for-u__gift-price">2330 руб</div>
+                                    <button class="gifts-for-u__gift-button">Добавить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gifts-for-u__arrows">
+                    <div class="gifts-for-u__right-arrow">
+                        <img src="./icons/arr-right.svg" alt="">
+                    </div>
+                    <div class="gifts-for-u__left-arrow">
+                        <img src="./icons/arr-left.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="gifts-for-u__bottom">
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 3 end ------------------------------------- -->
+    <!-- SECTION 4 start ------------------------------------- -->
+    <section class="shipping-and-payment">
+        <h3 class="shipping__title">Доставка и оплата</h3>
+        <div class="shipping">
+            <div class="shipping__item">
+                <img src="icons/box.svg" alt="" class="shipping__item-icon">
+                <p class="shipping__item-title">1. Оформление товара</p>
+                <p class="shipping__item-description">
+                    Дождитесь, когда с вами свяжется наш консультант и подтвердит заказ. Обращаем внимание, что не все
+                    цветы бывают в наличии
+                </p>
+            </div>
+            <div class="shipping__item">
+                <img src="icons/shipped.svg" alt="" class="shipping__item-icon">
+                <p class="shipping__item-title">2. Отравка заказа</p>
+                <p class="shipping__item-description">
+                    Перед доставкой вам отправят фото заказа, который будет бережно доставлен до нужной точки
+                </p>
+            </div>
+            <div class="shipping__item">
+                <img src="icons/flowers.svg" alt="" class="shipping__item-icon">
+                <p class="shipping__item-title">3. Получение цветов</p>
+                <p class="shipping__item-description">
+                    Курьер свяжется заранее для подтверждения адреса. Совершить оплату можно при получении. Все чеки
+                    будут выданы к заказу
+                </p>
+            </div>
+        </div>
+        <div class="delivery-options">
+            <div class="delivery-options__item delivery-options__item--first">
+                <div class="delivery-options__item-title">Варианты доставки</div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p>
+                        Заказы принимаются за сутки до отправления
+                    </p>
+                </div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p> Наличие цветов уточняйте у продавца
+                        в наличии — мы доставляем заказ в ближайшее время
+                        нет в наличии — нам нужно время, чтобы их получить.
+                    </p>
+                </div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p>
+                        Мы всегда можем предложить вам альтернативу
+                    </p>
+                </div>
+            </div>
+            <div class="delivery-options__item">
+                <div class="delivery-options__item-title">Курьер до двери</div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p>
+                        Доставка по Москве осуществляется бесплатно в пределах МКАД.
+                    </p>
+                </div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p>
+                        Доставка за пределами МКАД обговаривается отдельно.
+                    </p>
+                </div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p>
+                        Перед отправкой вам будет выслано фото на согласование.
+                    </p>
+                </div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p>
+                        Есть возможность бесконтактной доставки
+                    </p>
+                </div>
+            </div>
+            <div class="delivery-options__item">
+                <div class="delivery-options__item-title">Самовызов</div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p>
+                        г. Москва, Можайское шоссе, д. 41,к.1. <br>
+                        г. Москва, м. Фили, Новозаводская улица, д. 2, к.1.
+                    </p>
+                </div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p>
+                        Для выдачи заказа Вам нужно приехать в магазин
+                    </p>
+                </div>
+                <div class="delivery-option">
+                    <img src="icons/ellipse.svg" alt="">
+                    <p>
+                        назвать свою ФИО и номер заказа
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="payment-options">
+            <p class="payment-options__title">Возможнмости оплаты</p>
+            <p class="payment-options__description">В нашем магазине вы можете расплатиться:</p>
+            <div class="payment-options__container">
+                <div class="payment-options__item">
+                    <img src="icons/google-pay.svg" alt="">
+                    Google Pay
+                </div>
+                <div class="payment-options__item">
+                    <img src="icons/apple-pay.svg" alt="">
+                    Apple Pay
+                </div>
+                <div class="payment-options__item">
+                    <img src="icons/mobile-payment.svg" alt="">
+                    Оплата онлайн
+                </div>
+                <div class="payment-options__item">
+                    <img src="icons/debit-card.svg" alt="">
+                    Оплата картой
+                </div>
+                <div class="payment-options__item">
+                    <img src="icons/payment-method.svg" alt="">
+                    Оплата наличными
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- SECTION 4 end ------------------------------------- -->
+    <!-- FOOTER start ------------------------------------- -->
+    <div class="footer">
+        <div class="footer__top">
+            <div class="footer__first">
+                <div>
+                    <p class="footer__item">Главная</p>
+                    <p class="footer__item">О нас</p>
+                    <p class="footer__item">Блог</p>
+                    <p class="footer__item">Контакты</p>
+                </div>
+                <div class="footer__payment">
+                    <img src="icons/master.svg" alt="">
+                    <img src="icons/visa.svg" alt="">
+                </div>
+            </div>
+            <div class="footer__second">
+                <p class="footer__item">Возврат средств и оплата</p>
+                <p class="footer__item">Доставка и оплата</p>
+                <p class="footer__item">Изменение заказа</p>
+                <p class="footer__item">Скидки</p>
+                <p class="footer__item">Каталог</p>
+            </div>
+            <div class="footer__third">
+                <p class="footer__third-title">Магазины</p>
+                <p class="footer__location">
+                    <img src="icons/location.svg" alt=""> Можайское шоссе, д.41, к.1
+                </p>
+                <p class="footer__location-number">+7(999) 999-03-97</p>
+                <p class="footer__location">
+                    <img src="icons/location.svg" alt=""> м.Фили. Новозаводская улица, д.2, к.1
+                </p>
+                <p class="footer__location-number">+7(999) 999-03-97</p>
+            </div>
+            <div class="footer__fourth">
+                <img src="icons/logo.svg" alt="">
+                <p class="footer__copyright">
+                    © 2020 Все права защищены «Flowers place»
+                </p>
+
+                <div class="footer__number-and-media">
+                    <p class="footer__number">
+                        8 (000) 777-0016
+                    </p>
+                    <div class="underline"></div>
+                    <div class="footer__media">
+                        <img src="icons/wp.svg" alt="">
+                        <img src="icons/telegram.svg" alt="">
+                        <img src="icons/facebook-colored.svg" alt="">
+                        <img src="icons/instagram-colored.svg" alt="">
+                        <img src="icons/vk.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="underline"></div>
+        <div class="footer__bottom">
+            <span>karamin__</span>
+            <span>2021</span>
+        </div>
+    </div>
+    <!-- FOOTER end ------------------------------------- -->
+
+    <div class="product-modal">
+        <div class="product-modal__bg" onClick = "toggleProductModal()"></div>
+        <div class="product-modal__content">
+            <img class = "product-modal__image" src="images/modal.png" alt="">
+            <img class = "product-modal__close" src="icons/close.svg" alt="" onClick = "toggleProductModal()">
+        <div class="product-modal__close"></div>
+
+        </div>
+    </div>
+
+    <script src="./scripts/product.js"></script>
+    <script src="./scripts/choose-postcard.js"></script>
+    <script src="./scripts/gift-for-u.js"></script>
+    <script src="./scripts/reviews.js"></script>
+    <script src="./scripts/about-product.js"></script>
+
+</body>
+
+</html>
